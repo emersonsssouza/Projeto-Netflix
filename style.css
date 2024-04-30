@@ -32,6 +32,11 @@ html::-webkit-scrollbar-thumb {
     src: url(Fontes/Netflix/Gotham-Bold.otf);
 }
 
+@font-face {
+    font-family: "Netflix_Light";
+    src: url(Fontes/Netflix/Gotham-Light.otf);
+}
+
 body,
 html {
     width: 100vw;
@@ -97,16 +102,18 @@ header nav select {
     padding: 0.3rem;
 }
 
+header nav select option {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
 select:hover {
     cursor: pointer;
 }
 
 /* Estilo para os options */
-.custom_select select {
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
-}
+
 
 header nav button {
     height: 35px;
@@ -167,16 +174,16 @@ header nav button>a {
     color: white;
     line-height: 3rem;
     font-size: 1rem;
-    font-family: "Arial";
-    font-weight: normal;
+    font-family: "Netflix_Light";
+    font-weight: bold;
 }
 
 .content_back #back_02 {
     color: white;
     line-height: 1rem;
     font-size: 1rem;
-    font-family: "Arial";
-    font-weight: normal;
+    font-family: "Netflix_Light";
+    font-weight: bold;
 }
 
 .content_back input[type="email"] {
@@ -246,7 +253,8 @@ header nav button>a {
 
 .content_apresentation .back_value p {
     color: white;
-    font-family: "Arial";
+    font-family: "Netflix_light";
+    font-weight: bold;
     font-size: 0.9rem;
     line-height: 2rem;
 }
@@ -255,7 +263,7 @@ header nav button>a {
     font-size: 0.8rem;
     font-weight: bold;
     color: var(--color_link);
-    font-family: "Arial";
+    font-family: "Netflix_light";
     cursor: pointer;
 }
 
@@ -288,6 +296,16 @@ main {
     align-items: center;
     background-color: black;
 }
+
+/*ESTILIZAÇÃO ESPECIAL DO SMARTPHONE COM ID*/
+.content_introduce #content_items {
+    display: flex;
+    color: #969496;
+    font-size: 20px;
+    padding: 1rem 0;
+}
+
+/*FIM DA ESTILIZAÇÃO ESPECIAL*/
 
 .content_introduce .content_items .content_item {
     background-color: transparent;
@@ -360,7 +378,8 @@ main {
 .content_introduce .content_items p {
     color: white;
     padding: 1rem 0;
-    font-family: "Arial";
+    font-family: "Netflix_Light";
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -402,7 +421,8 @@ main {
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-family: "Arial";
+    font-family: "Netflix_Light";
+    font-size: 1.3rem;
     padding: 1.6rem;
     background-color: transparent;
 }
@@ -733,4 +753,366 @@ footer #language {
         font-family: "Netflix";
     }
 }
+
 /*FIM DA MIDIA PARA SMARTPHONE*/
+/*INICIO DA ESTILIZAÇÃO PARA TABLETS E SMARTPHONES EM MODO LANDSCAPE*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    header {
+        padding: 0.2rem 0;
+        align-items: center;
+    }
+
+    header nav {
+        width: 90vw;
+    }
+
+    header nav img {
+        width: 70px;
+    }
+
+    .custom_select select {
+        width: normal;
+    }
+
+    .container_back_principal {
+        height: 450px;
+    }
+
+    .container_back_principal .content_back_principal {
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content_back {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+        padding: 0.2rem;
+    }
+
+    .content_back h1 {
+        font-size: 1.6rem;
+    }
+
+    .content_back #back_01 {
+        width: 500px;
+        padding: 0.8rem 0;
+        line-height: 2.5rem;
+    }
+
+    .content_back input[type="email"] {
+        width: 400px;
+        margin: 0.5rem;
+    }
+
+    .content_back_apresentation {
+        width: 70vw;
+        height: 100px;
+        margin: -6.2rem;
+    }
+
+    .content_back_apresentation .content_apresentation {
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .content_apresentation .back_value {
+        margin: 0.2rem;
+    }
+
+    .content_back_apresentation .content_apresentation .back_value h2 {
+        width: 100%;
+        padding: 0.5rem 0;
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .content_back_apresentation .content_apresentation .back_value p {
+        width: 100%;
+        line-height: 0.8rem;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        font-family: "Arial";
+    }
+
+    .content_back_apresentation .content_apresentation .back_value a {
+        width: 100%;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+    }
+
+    main {
+        margin: 9rem 0 0 0;
+        background-color: transparent;
+    }
+
+    .content_introduce {
+        flex-direction: row-reverse;
+    }
+
+    /*ESTILIZAÇÃO ESPECIAL DA ULTIMA SECTION*/
+    :last-child #content_items {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #content_mobile {
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /*FIM*/
+    .content_introduce .content_items .content_item {
+        /*RESET DO STYLE PRINCIPAL*/
+        max-width: 90%;
+        min-width: none;
+    }
+
+    .content_introduce .content_items .content_item h2 {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .content_introduce .content_items .content_item p {
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .content_introduce .content_items .content_img {
+        width: 100%;
+    }
+
+    .content_introduce .content_items .content_img img {
+        width: 70%;
+    }
+
+    .container_questions h1 {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .container_question {
+        width: 100%;
+    }
+
+    .container_faq {
+        margin: 0.5rem auto;
+        width: 95%;
+    }
+
+    .container_faq h2 {
+        font-size: 1rem;
+    }
+
+    .content_faq p {
+        font-size: 17px;
+    }
+
+    .info_faq form {
+        flex-direction: column;
+    }
+
+    .info_faq form input[type="email"] {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    .info_faq form button[type="submit"] {
+        width: max-content;
+        padding: 0.5rem;
+        font-family: "Netflix";
+    }
+}
+
+/*MEDIA PARA 'SMARTPHONES MENORES' EM MODO LANDSCAPE*/
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+    header {
+        padding: 0.2rem 0;
+        align-items: center;
+    }
+
+    header nav {
+        width: 90vw;
+    }
+
+    header nav img {
+        width: 70px;
+    }
+
+    .custom_select select {
+        width: normal;
+    }
+
+    .container_back_principal {
+        height: 450px;
+    }
+
+    .container_back_principal .content_back_principal {
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content_back {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+        padding: 0.2rem;
+    }
+
+    .content_back h1 {
+        font-size: 1.6rem;
+    }
+
+    .content_back #back_01 {
+        width: 500px;
+        padding: 0.8rem 0;
+        line-height: 2.5rem;
+    }
+
+    .content_back input[type="email"] {
+        width: 400px;
+        margin: 0.5rem;
+    }
+
+    .content_back_apresentation {
+        width: 70vw;
+        height: 100px;
+        margin: -6.2rem;
+    }
+
+    .content_back_apresentation .content_apresentation {
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .content_apresentation .back_value {
+        margin: 0.2rem;
+    }
+
+    .content_back_apresentation .content_apresentation .back_value h2 {
+        width: 100%;
+        padding: 0.5rem 0;
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .content_back_apresentation .content_apresentation .back_value p {
+        width: 100%;
+        line-height: 0.8rem;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        font-family: "Arial";
+    }
+
+    .content_back_apresentation .content_apresentation .back_value a {
+        width: 100%;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+    }
+
+    main {
+        margin: 9rem 0 0 0;
+        background-color: transparent;
+    }
+
+    .content_introduce {
+        flex-direction: row-reverse;
+    }
+
+    /*ESTILIZAÇÃO ESPECIAL DA ULTIMA SECTION*/
+    :last-child #content_items {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #content_mobile {
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /*FIM*/
+    .content_introduce .content_items .content_item {
+        /*RESET DO STYLE PRINCIPAL*/
+        max-width: 90%;
+        min-width: none;
+    }
+
+    .content_introduce .content_items .content_item h2 {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .content_introduce .content_items .content_item p {
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .content_introduce .content_items .content_img {
+        width: 100%;
+    }
+
+    .content_introduce .content_items .content_img img {
+        width: 70%;
+    }
+
+    .container_questions h1 {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .container_question {
+        width: 100%;
+    }
+
+    .container_faq {
+        margin: 0.5rem auto;
+        width: 95%;
+    }
+
+    .container_faq h2 {
+        font-size: 1rem;
+    }
+
+    .content_faq p {
+        font-size: 17px;
+    }
+
+    .info_faq form {
+        flex-direction: column;
+    }
+
+    .info_faq form input[type="email"] {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    .info_faq form button[type="submit"] {
+        width: max-content;
+        padding: 0.5rem;
+        font-family: "Netflix";
+    }
+}
