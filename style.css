@@ -551,3 +551,186 @@ footer #language {
 #TM {
     display: none;
 }
+
+@media (max-width: 450px) {
+    header {
+        padding: 0.2rem 0;
+        align-items: flex-start;
+    }
+
+    header nav {
+        width: 90vw;
+    }
+
+    header nav img {
+        width: 70px;
+    }
+
+    .custom_select select {
+        width: 20px;
+    }
+
+    .container_back_principal {
+        height: 500px;
+    }
+
+    .container_back_principal .content_back_principal {
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content_back {
+        align-items: flex-start;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        padding: 0.2rem;
+    }
+
+    .content_back h1 {
+        font-size: 1.2rem;
+    }
+
+    .content_back #back_01 {
+        width: 270px;
+        padding: 0.8rem 0;
+        line-height: 1rem;
+    }
+
+    .content_back input {
+        margin: 0.5rem 0;
+    }
+
+    .content_back_apresentation {
+        width: 90vw;
+        height: 160px;
+    }
+
+    .content_back_apresentation .content_apresentation {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.2rem;
+    }
+
+    .content_apresentation .back_img {
+        position: absolute;
+        top: -20%;
+        left: 0;
+    }
+
+    .content_apresentation .back_value {
+        position: relative;
+        top: 10%;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .content_back_apresentation .content_apresentation .back_value h2 {
+        width: 95%;
+        padding: 0.5rem 0;
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+
+    }
+
+    .content_back_apresentation .content_apresentation .back_value p {
+        width: 95%;
+        line-height: 0.8rem;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+        font-family: "Netflix";
+    }
+
+    .content_back_apresentation .content_apresentation .back_value a {
+        width: 95%;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    main {
+        margin: 6rem 0;
+    }
+
+    .content_introduce {
+        flex-direction: row-reverse;
+    }
+
+    /*ESTILIZAÇÃO ESPECIAL DA ULTIMA SECTION*/
+    :last-child #content_items {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #content_mobile {
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /*FIM*/
+
+    .content_introduce .content_items .content_item h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .content_introduce .content_items .content_item p {
+        width: 100%;
+        text-align: justify;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .content_introduce .content_items .content_img {
+        width: 100%;
+    }
+
+    .content_introduce .content_items .content_img img {
+        width: 100%;
+    }
+
+    .container_questions h1 {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .container_question {
+        width: 100%;
+    }
+
+    .container_faq {
+        margin: 0.5rem auto;
+        width: 95%;
+    }
+
+    .container_faq h2 {
+        font-size: 1rem;
+    }
+
+    .content_faq p {
+        font-size: 17px;
+    }
+
+    .info_faq form {
+        flex-direction: column;
+    }
+
+    .info_faq form input[type="email"] {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    .info_faq form button[type="submit"] {
+        width: max-content;
+        padding: 0.5rem;
+        font-family: "Netflix";
+    }
+}
+/*FIM DA MIDIA PARA SMARTPHONE*/
